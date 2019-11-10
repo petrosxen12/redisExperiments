@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <title>View image</title>
+</head>
+
+<body>
+
+  <main>
+
+    <div class="container mt-3">
+      <div class="row">
+        <div class="col">
+
+          <picture>
+            <!-- thumbnail -->
+            <source type="image/webp" class="img-fluid" srcset="{{src}}/{{dir}}/{{img}}-thumbnail.{{extension}}" media="(max-width: 150px)">
+            <!-- small -->
+            <source type="image/webp" class="img-fluid" srcset="{{src}}/{{dir}}/{{img}}-540.{{extension}}" media="(max-width: 540px)">
+            <!-- medium -->
+            <source type="image/webp" class="img-fluid" srcset="{{src}}/{{dir}}/{{img}}-768.{{extension}}" media="(max-width: 768px)">
+            <!-- large -->
+            <source type="image/webp" class="img-fluid" srcset="{{src}}/{{dir}}/{{img}}-1080.{{extension}}" media="(max-width: 1080px)">
+            <!-- xl -->
+            <source type="image/webp" class="img-fluid" srcset="{{src}}/{{dir}}/{{img}}-1200.{{extension}}" media="(max-width: 1200px)">
+            <!-- original -->
+            <img type="image/webp" class="img-fluid" src="{{src}}/{{dir}}/{{img}}.{{extension}}" />
+          </picture>
+
+          <!-- <picture>
+            <source srcset="example-thumbnail.png" media="(max-width: 150px)">
+            <source srcset="example-540.png" media="(max-width: 540px)">
+            <source srcset="example-768.png" media="(max-width: 768px)">
+            <source srcset="example-1080.png" media="(max-width: 1080px)">
+            <source srcset="example-1200.png" media="(max-width: 1200px)">
+            <img src="{{src}}/example.png" />
+          </picture> -->
+
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Import bootstrap JS here -->
+
+</body>
+
+</html>
